@@ -1,20 +1,22 @@
 # large / regeneratable model artifacts
-artifacts/*.pkl
-artifacts/*.lgb
-artifacts/*.npy
+**/artifacts/*.pkl
+**/artifacts/*.lgb
+**/artifacts/*.npy
+**/artifacts/*.png
+**/artifacts/*.json
 
 # keep these — small, useful for reproducing without rerunning training
-!artifacts/threshold.json
-!artifacts/feature_names.json
-!artifacts/dropped_columns.json
-!artifacts/imputation_val*.json
-!artifacts/amt_zscore_stats.json
-!artifacts/email_frq_lookup.json
+!**/artifacts/threshold.json
+!**/artifacts/feature_names.json
+!**/artifacts/dropped_columns.json
+!**/artifacts/imputation_val*.json
+!**/artifacts/amt_zscore_stats.json
+!**/artifacts/email_frq_lookup.json
 
 # python junk
 __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 
-#datasets
+# datasets
 ieee-fraud-detection/*
